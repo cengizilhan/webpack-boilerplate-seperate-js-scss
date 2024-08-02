@@ -1,0 +1,14 @@
+[
+  {
+    "message": "asset size limit: The following asset(s) exceed the recommended size limit (500 KiB). This can impact web performance. Assets: ./custom-script-path/test1.min.js (602 KiB) ./scripts/page1/page1.app.min.js (1.62 MiB) ./scripts/page2/page2.app.min.js (602 KiB) ./styles/page1/page1.js (619 KiB) ./styles/./style.js (619 KiB) ./custom-style-path/test1.js (619 KiB)",
+    "details": ""
+  },
+  {
+    "message": "entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (500 KiB). This can impact web performance. Entrypoints: ./custom-script-path/test1.min (603 KiB) ./custom-script-path/test1.min.js ./custom-script-path/test1.min.886925999a09567ba622.hot-update.js ./scripts/page1/page1.app.min (1.62 MiB) ./scripts/page1/page1.app.min.js ./scripts/page1/page1.app.min.886925999a09567ba622.hot-update.js ./scripts/page2/page2.app.min (603 KiB) ./scripts/page2/page2.app.min.js ./scripts/page2/page2.app.min.886925999a09567ba622.hot-update.js ./styles/page1/page1 (622 KiB) ./styles/page1/page1.min.css ./styles/page1/page1.js ./styles/page1/page1.886925999a09567ba622.hot-update.js ./styles/./style (622 KiB) ./styles/./style.min.css ./styles/./style.js ./styles/./style.886925999a09567ba622.hot-update.js ./custom-style-path/test1 (622 KiB) ./custom-style-path/test1.min.css ./custom-style-path/test1.js ./custom-style-path/test1.886925999a09567ba622.hot-update.js",
+    "details": ""
+  },
+  {
+    "message": "webpack performance recommendations: You can limit the size of your bundles by using import() or require.ensure to lazy load some parts of your application. For more info visit https://webpack.js.org/guides/code-splitting/",
+    "details": ""
+  }
+]
