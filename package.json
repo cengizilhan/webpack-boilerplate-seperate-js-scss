@@ -1,7 +1,7 @@
 {
   "name": "webpack-boilerplate-seperate-js-scss",
   "version": "1.0.0",
-  "description": "Sensible webpack 5 boilerplate using Babel and PostCSS.",
+  "description": "If your project is written in vanilla JS and SCSS, this Webpack 5 boilerplate is designed to meet your needs.",
   "main": "index.js",
   "author": "Cengiz Ilhan",
   "license": "MIT",
