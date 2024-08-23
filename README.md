@@ -15,6 +15,28 @@ If your project is written in vanilla JS and SCSS, this Webpack 5 boilerplate is
 ### Requirements
 - **Node Version**: 20.14.0
 
+## JS
+Scripts ending with .app, -app, .vendor, -vendor under Static/src/scripts are transferred to the dist directory.
+For custom paths: ./webpack-assets/scriptsEntries.js/customJsPaths
+
+## SCSS
+All SCSS files under Static/src/styles, except those starting with "_", are converted to CSS.
+For custom paths: ./webpack-assets/customStyleEntries.js
+
+## Concat Js Files
+Concatenation of JS files was added out of necessity for older files; it is recommended not to use the concat structure for new files. Instead, you can use the ES6/webpack module system.
+
+./webpack-assets/concatJsFiles.js
+
+## Copy Files
+./webpack-assets/copyWebPackEntries.js
+
+## HTML Landings
+Each HTML file under Static/src/static-dev-templates is transferred to the dist directory only in "dev" mode; they are not generated during the build process.
+You can create SCSS files under src/styles and add the relevant paths.
+For JS: create the files under src/script and add the relevant paths.
+Example: static/src/static-dev-templates/example
+
 ### Features
 - **jQuery**: Integrated for simplified DOM manipulation.
 - **Separate JS and SCSS/CSS Files**: Maintains clean and organized code.

@@ -9,12 +9,19 @@ const { _concat1js } = require('./../webpack-assets/concatJsFiles/concatJsFiles'
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const ErrorToJsonPlugin = require('../plugins/webpack-error2json');
 const htmlPlugins =require('../webpack-assets/htmlWebpackPluginEntries');
+const ESLintPlugin = require('eslint-webpack-plugin');
 
 const env = process.env.NODE_ENV || 'development';
 
 let plugins = [
-    // if you need to use jquery in your project //
-    new webpack.ProvidePlugin({
+    //if you need auto linting on save / build
+    new ESLintPlugin({
+        files:'Static/src/scripts/**/*.js',
+        extensions: ['js'],
+    }),
+        // if you need to use jquery in your project //
+
+        new webpack.ProvidePlugin({
         $: "jquery",
         jQuery: "jquery",
         'window.jQuery': 'jquery',
