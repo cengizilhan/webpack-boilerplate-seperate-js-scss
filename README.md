@@ -15,6 +15,13 @@ If your project is written in vanilla JS and SCSS, this Webpack 5 boilerplate is
 ### Requirements
 - **Node Version**: 20.14.0
 
+## Jest Unit Tester
+/npm run test
+Example:
+-create-video.js
+-create-video.test.js
+
+
 ## JS
 Scripts ending with .app, -app, .vendor, -vendor under Static/src/scripts are transferred to the dist directory.
 For custom paths: ./webpack-assets/scriptsEntries.js/customJsPaths
@@ -46,11 +53,14 @@ Example: static/src/static-dev-templates/example
 - **Custom SCSS and JS Paths**: Flexible path configuration for styles and scripts.
 - **Auto-generated SCSS Files**: Generates all SCSS files under the styles directory (excluding files starting with "_").
 - **Bundle Analyzer**: Included for development to analyze bundle content.
+- **Jest**: Configured for unit and integration testing within the Static/src/scripts directory.
+
 
 ### Benefits
 - Streamlined development with automated tasks.
 - Clean, maintainable code structure.
 - Enhanced project organization with separate file handling.
 - Improved performance insights with Bundle Analyzer.
+- Reliable code quality with Jest testing.
 
-Use this boilerplate to efficiently manage your vanilla JS and SCSS projects with Webpack 5.
+Use this boilerplate to efficiently manage your vanilla JS and SCSS projects with Webpack 5 and ensure code quality with Jest.
