@@ -54,6 +54,16 @@ module.exports = {
     module: {
         rules: [
             {
+                test: /\.tsx?$/,
+                use: 'ts-loader',
+                exclude: /node_modules/,
+              },
+              {
+                test: /\.jsx?$/,
+                use: 'babel-loader',  // Assuming you're using Babel for JS files
+                exclude: /node_modules/,
+              },
+            {
                 test: /\.js$/,
                 exclude: /node_modules/,
                 use: ['babel-loader']
@@ -120,7 +130,7 @@ module.exports = {
     resolve: {
         preferRelative: true,
         modules: [paths.src, 'node_modules', path.resolve(__dirname, 'src')],
-        extensions: ['.js', '.jsx', '.json'],
+        extensions: ['.js', '.jsx', '.json', '.tsx', '.ts'],
         alias: {
             '@pathsSrc': paths.src,
             '@images/': paths.images,

@@ -40,7 +40,7 @@ module.exports = merge(common, {
         ie8: true,
         sourceMap: true,
         compress: {
-          drop_console: true,
+          drop_console: false,
         },
       },
     })],

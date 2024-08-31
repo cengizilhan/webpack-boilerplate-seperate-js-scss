@@ -9,6 +9,10 @@ let otherArr = [
 {
     src: paths.src + '/custom-script-path/test1.js',
     dist: './custom-script-path/test1.min'
+},
+{
+    src: paths.src + '/scripts/ts-test.ts',
+    dist: './scripts/ts-test.min'
 }
 
 ];

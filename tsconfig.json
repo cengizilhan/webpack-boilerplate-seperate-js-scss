@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+      "target": "ES6",
+      "module": "ESNext",
+      "allowJs": true,
+      "jsx": "react",
+      "moduleResolution": "node",
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true
+    },
+    "include": ["Static/src/scripts/**/*"],
+    "exclude": ["node_modules"]
+  }
+  

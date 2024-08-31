@@ -54,6 +54,7 @@ Example: static/src/static-dev-templates/example
 - **Auto-generated SCSS Files**: Generates all SCSS files under the styles directory (excluding files starting with "_").
 - **Bundle Analyzer**: Included for development to analyze bundle content.
 - **Jest**: Configured for unit and integration testing within the Static/src/scripts directory.
+- **TypeScript Support**: TypeScript can be used where needed, but JavaScript remains the primary language, making TypeScript usage entirely optional.
 
 
 ### Benefits
